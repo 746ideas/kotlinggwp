@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background"
+    android:paddingTop="0dp">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/score_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/team1_logo"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10sp"
+                    android:src="@drawable/shield" />
+
+                <TextView
+                    android:id="@+id/team1_n"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:maxLines="1"
+                    android:text="team 1"
+                    android:textColor="#1eb980"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/team1_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="3"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="10">
+
+                <ImageView
+                    android:id="@+id/team2_logo"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10sp"
+                    android:src="@drawable/shield" />
+
+                <TextView
+                    android:id="@+id/team2_n"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:maxLines="1"
+                    android:text="team 2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/team2_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+
+                    android:gravity="end"
+                    android:text="2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
